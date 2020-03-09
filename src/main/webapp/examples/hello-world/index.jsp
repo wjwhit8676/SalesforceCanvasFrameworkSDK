@@ -7,6 +7,7 @@
 
         function loginHandler(e) {
             var uri;
+            alert(Sfdc.canvas.oauth.loggedin());
             if (! Sfdc.canvas.oauth.loggedin()) {
                 uri = Sfdc.canvas.oauth.loginUrl();
                 Sfdc.canvas.oauth.login(
