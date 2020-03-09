@@ -32,11 +32,11 @@
             alert("This canvas app must be included within an iframe");
         }
         
-        alert(JSON.parse('<%=signedRequestJson%>').context.user.fullName);
+        alert(JSON.parse('<%=signedRequestJson%>').oauthToken);
 
         Sfdc.canvas(function() {
+            alert('test');
             var sr = JSON.parse('<%=signedRequestJson%>');
-                                alert(sr);
             // Save the token
             Sfdc.canvas.oauth.token(sr.oauthToken);
             Sfdc.canvas.byId('username').innerHTML = sr.context.user.fullName;
