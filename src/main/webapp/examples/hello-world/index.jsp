@@ -15,7 +15,7 @@
                             response_type : "token",
                             client_id : "3MVG9OI03ecbG2VqCv2eXuulZtNwN4gAKSwZzJxAb0vrU3kWs.oAnL_FPyitHJ2zJN4gwXjNvW8xNnRGtf6W0",
                             redirect_uri : encodeURIComponent(
-                                "https://testcanvasecms.herokuapp.com/sdk/callback.html")
+                                "https://testcanvasecms.herokuapp.com/localSDK2/callback.html")
                         }});
             }
             else {
