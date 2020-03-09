@@ -22,7 +22,7 @@
     <link rel="stylesheet" type="text/css" href="/sdk/css/canvas.css" />
 
     <!-- Include all the canvas JS dependencies in one file -->
-    <script type="text/javascript" src="<instance>.salesforce.com/canvas/sdk/js/45.0/canvas-all.js"></script>
+    <script type="text/javascript" src="singlefamily-fanniemae--ecmspoc2.salesforce.com/canvas/sdk/js/45.0/canvas-all.js"></script>
     <!-- Third part libraries, substitute with your own -->
     <script type="text/javascript" src="/scripts/json2.js"></script>
 
@@ -31,10 +31,7 @@
             // Not in Iframe
             alert("This canvas app must be included within an iframe");
         }
-        
-        alert(JSON.parse('<%=signedRequestJson%>').oauthToken);
         Sfdc.canvas(function() {
-            alert('test');
             var sr = JSON.parse('<%=signedRequestJson%>');
             // Save the token
             //Sfdc.canvas.oauth.token(sr.oauthToken);
@@ -44,6 +41,6 @@
 </head>
 <body>
     <br/>
-    <h1>Hello <span id='username'> test</span></h1>
+    <h1>Hello <span id='username'></span></h1>
 </body>
 </html>
