@@ -19,10 +19,10 @@
 
     <title>Hello World Canvas Example</title>
 
-    <link rel="stylesheet" type="text/css" href="/localsdk/css/canvas.css" />
+    <link rel="stylesheet" type="text/css" href="/localSDK2/css/canvas.css" />
 
     <!-- Include all the canvas JS dependencies in one file -->
-    <script type="text/javascript" src="/localsdk/js/canvas-all.js"></script>
+    <script type="text/javascript" src="/localSDK2/js/canvas-all.js"></script>
     <!-- Third part libraries, substitute with your own -->
     <script type="text/javascript" src="/scripts/json2.js"></script>
 
