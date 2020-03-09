@@ -32,7 +32,7 @@
             alert("This canvas app must be included within an iframe");
         }
         
-        alert(JSON.parse('<%=signedRequestJson%>'));
+        alert(JSON.parse('<%=signedRequestJson%>').context.user.fullName);
 
         Sfdc.canvas(function() {
             var sr = JSON.parse('<%=signedRequestJson%>');
